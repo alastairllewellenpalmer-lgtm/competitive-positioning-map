@@ -1,9 +1,11 @@
 // scripts/sync-notion.js
-// Fetches competitor data from Notion and writes to JSON file
+import { Client } from '@notionhq/client';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const { Client } = require('@notionhq/client');
-const fs = require('fs');
-const path = require('path');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 const databaseId = process.env.NOTION_DATABASE_ID;
