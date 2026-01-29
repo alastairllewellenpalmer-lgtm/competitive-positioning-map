@@ -1,0 +1,115 @@
+{
+  "lastUpdated": "2025-01-29",
+  "competitors": [
+    {
+      "name": "Hive Perform",
+      "type": "You",
+      "targetSegment": "SMB/Mid-Market",
+      "pricingModel": "£1k-£3k/month (tiered)",
+      "keyDifferentiator": "AI-native closed-loop execution",
+      "g2Rating": null,
+      "easeOfUse": 75,
+      "priceLevel": 35
+    },
+    {
+      "name": "Gong",
+      "type": "Direct",
+      "targetSegment": "Mid-Market/Enterprise",
+      "pricingModel": "~$1,200-1,600/user/year",
+      "keyDifferentiator": "Conversation intelligence leader",
+      "g2Rating": 4.7,
+      "easeOfUse": 65,
+      "priceLevel": 80
+    },
+    {
+      "name": "Clari",
+      "type": "Direct",
+      "targetSegment": "Mid-Market/Enterprise",
+      "pricingModel": "Custom (varies by tier)",
+      "keyDifferentiator": "Revenue forecasting & operations",
+      "g2Rating": 4.5,
+      "easeOfUse": 40,
+      "priceLevel": 85
+    },
+    {
+      "name": "MediaFly",
+      "type": "Direct",
+      "targetSegment": "Enterprise",
+      "pricingModel": "Custom enterprise pricing",
+      "keyDifferentiator": "Sales content management",
+      "g2Rating": 4.3,
+      "easeOfUse": 25,
+      "priceLevel": 88
+    },
+    {
+      "name": "WorkRamp",
+      "type": "Direct",
+      "targetSegment": "Mid-Market/Enterprise",
+      "pricingModel": "~$25-40/user/month",
+      "keyDifferentiator": "Sales training LMS with superior UX",
+      "g2Rating": 4.7,
+      "easeOfUse": 80,
+      "priceLevel": 55
+    },
+    {
+      "name": "Highspot",
+      "type": "Direct",
+      "targetSegment": "Mid-Market/Enterprise",
+      "pricingModel": "Custom pricing",
+      "keyDifferentiator": "Sales enablement platform",
+      "g2Rating": 4.6,
+      "easeOfUse": 50,
+      "priceLevel": 82
+    },
+    {
+      "name": "Seismic",
+      "type": "Direct",
+      "targetSegment": "Enterprise",
+      "pricingModel": "Custom enterprise pricing",
+      "keyDifferentiator": "Content enablement & automation",
+      "g2Rating": 4.5,
+      "easeOfUse": 30,
+      "priceLevel": 90
+    },
+    {
+      "name": "Allego",
+      "type": "Direct",
+      "targetSegment": "Mid-Market/Enterprise",
+      "pricingModel": "Custom pricing",
+      "keyDifferentiator": "Revenue enablement (training focus)",
+      "g2Rating": 4.6,
+      "easeOfUse": 45,
+      "priceLevel": 78
+    },
+    {
+      "name": "Momentum.ai",
+      "type": "Indirect",
+      "targetSegment": "SMB/Mid-Market",
+      "pricingModel": "~$15-29/user/month",
+      "keyDifferentiator": "Sales workflow automation",
+      "g2Rating": 4.8,
+      "easeOfUse": 85,
+      "priceLevel": 25
+    },
+    {
+      "name": "Oliv.ai",
+      "type": "Indirect",
+      "targetSegment": "SMB/Mid-Market",
+      "pricingModel": "Usage-based tiered",
+      "keyDifferentiator": "AI sales assistant",
+      "g2Rating": 4.7,
+      "easeOfUse": 78,
+      "priceLevel": 22
+    },
+    {
+      "name": "Klue",
+      "type": "Indirect",
+      "targetSegment": "Mid-Market/Enterprise",
+      "pricingModel": "~$1,000+/user/year",
+      "keyDifferentiator": "Competitive intelligence only",
+      "g2Rating": 4.8,
+      "easeOfUse": 60,
+      "priceLevel": 75
+    }
+  ]
+}
