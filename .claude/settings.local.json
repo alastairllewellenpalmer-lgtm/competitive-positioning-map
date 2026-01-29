@@ -7,7 +7,12 @@
       "Bash(timeout:*)",
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Key Notes field to competitor hover tooltips\n\n- Added keyNotes to Notion sync script property mapping\n- Added keyNotes field to hardcoded fallback data in App.jsx\n- Updated tooltip to conditionally display Key Notes \\(gray, italic\\)\n- Added keyNotes field to competitors-data.json\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nMerge remote main and add Key Notes field to tooltips\n\n- Added keyNotes to Notion sync script property mapping\n- Added keyNotes field to hardcoded fallback data in App.jsx\n- Updated tooltip to conditionally display Key Notes \\(gray, italic\\)\n- Added keyNotes field to competitors-data.json\n- Resolved merge conflicts, kept ES module syntax for sync script\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

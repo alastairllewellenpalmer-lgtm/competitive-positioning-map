@@ -1,18 +1,16 @@
-# .github/workflows/sync-notion.yml
-# This workflow syncs competitor data from Notion weekly and triggers a redeploy
-
 name: Sync Notion Competitor Data
 
 on:
   schedule:
-    # Runs every Monday at 9am UTC
-    - cron: '0 9 * * 1'
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 7 * * *'
+  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -29,8 +27,7 @@ jobs:
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-        run: |
-          node scripts/sync-notion.js
+        run: node scripts/sync-notion.js
 
       - name: Check for changes
         id: changes
@@ -43,8 +40,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add src/data/competitors-data.json
-          git commit -m "chore: sync competitor data from Notion [skip ci]"
+          git commit -m "chore: sync competitor data from Notion"
           git push
-
-      # Vercel auto-deploys on push, so no additional step needed
-      # If using Netlify, add a build hook trigger here

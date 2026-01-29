@@ -46,8 +46,8 @@ export default function CompetitiveMap() {
     size: c.type === 'You' ? 14 : c.type === 'Direct' ? 11 : 9
   }));
 
-  const filteredCompetitors = selectedType === 'all' 
-    ? competitors 
+  const filteredCompetitors = selectedType === 'all'
+    ? competitors
     : competitors.filter(c => c.type === selectedType);
 
   const types = ['all', ...new Set(competitors.map(c => c.type))];
@@ -63,7 +63,7 @@ export default function CompetitiveMap() {
           Updated: {competitorData.lastUpdated}
         </div>
       </div>
-      
+
       {/* Filter buttons */}
       <div className="flex justify-between items-center mb-4">
         <div className="flex gap-2">
@@ -72,8 +72,8 @@ export default function CompetitiveMap() {
               key={type}
               onClick={() => setSelectedType(type)}
               className={`px-3 py-1 text-xs rounded-full transition-all ${
-                selectedType === type 
-                  ? 'bg-gray-800 text-white' 
+                selectedType === type
+                  ? 'bg-gray-800 text-white'
                   : 'bg-white text-gray-600 border border-gray-300 hover:bg-gray-100'
               }`}
             >
@@ -102,7 +102,7 @@ export default function CompetitiveMap() {
         {/* Axes */}
         <div className="absolute left-4 top-4 bottom-4 w-px bg-gray-300"></div>
         <div className="absolute left-4 right-4 bottom-4 h-px bg-gray-300"></div>
-        
+
         {/* Axis labels */}
         <div className="absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 text-xs font-medium text-gray-500 whitespace-nowrap">
           PRICE →
@@ -162,7 +162,7 @@ export default function CompetitiveMap() {
 
         {/* Tooltip */}
         {hoveredCompetitor && (
-          <div 
+          <div
             className="absolute z-50 bg-gray-900 text-white px-3 py-2 rounded-lg shadow-xl text-sm pointer-events-none min-w-48"
             style={{
               left: `${Math.min(Math.max(hoveredCompetitor.x, 20), 80)}%`,
@@ -218,7 +218,7 @@ export default function CompetitiveMap() {
                 <tr key={c.name} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                   <td className="px-3 py-2 font-medium">{c.name}</td>
                   <td className="px-3 py-2">
-                    <span 
+                    <span
                       className="px-2 py-0.5 rounded-full text-white text-xs"
                       style={{ backgroundColor: c.color }}
                     >
@@ -240,7 +240,7 @@ export default function CompetitiveMap() {
       <div className="mt-4 p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
         <div className="text-xs font-semibold text-emerald-800 mb-1">Strategic Position</div>
         <div className="text-xs text-emerald-700">
-          Hive Perform occupies a differentiated position: competitive pricing with high ease-of-use, 
+          Hive Perform occupies a differentiated position: competitive pricing with high ease-of-use,
           while most direct competitors cluster in the high-price/complex quadrant.
         </div>
       </div>

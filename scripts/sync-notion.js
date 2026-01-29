@@ -1,16 +1,18 @@
 // scripts/sync-notion.js
-// Fetches competitor data from Notion and writes to JSON file
+import { Client } from '@notionhq/client';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const { Client } = require('@notionhq/client');
-const fs = require('fs');
-const path = require('path');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 const databaseId = process.env.NOTION_DATABASE_ID;
 
 async function syncNotionData() {
   console.log('Fetching competitor data from Notion...');
-  
+
   const response = await notion.databases.query({
     database_id: databaseId,
     sorts: [{ property: 'Name', direction: 'ascending' }]
@@ -18,7 +20,7 @@ async function syncNotionData() {
 
   const competitors = response.results.map(page => {
     const props = page.properties;
-    
+
     return {
       name: props.Name?.title?.[0]?.plain_text || '',
       type: props.Type?.select?.name || 'Direct',
@@ -39,7 +41,7 @@ async function syncNotionData() {
 
   const outputPath = path.join(__dirname, '../src/data/competitors-data.json');
   fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
-  
+
   console.log(`✓ Synced ${competitors.length} competitors`);
   console.log(`✓ Written to ${outputPath}`);
 }
