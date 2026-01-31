@@ -1,26 +1,15 @@
 {
-  "lastUpdated": "2025-01-29",
+  "lastUpdated": "2026-01-31",
   "competitors": [
     {
-      "name": "Hive Perform",
-      "type": "You",
-      "targetSegment": "SMB/Mid-Market",
-      "pricingModel": "£1k-£3k/month (tiered)",
-      "keyDifferentiator": "AI-native closed-loop execution",
-      "g2Rating": null,
-      "easeOfUse": 75,
-      "priceLevel": 35,
-      "keyNotes": ""
-    },
-    {
-      "name": "Gong",
+      "name": "Allego",
       "type": "Direct",
       "targetSegment": "Mid-Market/Enterprise",
-      "pricingModel": "~$1,200-1,600/user/year",
-      "keyDifferentiator": "Conversation intelligence leader",
-      "g2Rating": 4.7,
-      "easeOfUse": 65,
-      "priceLevel": 80,
+      "pricingModel": "Custom pricing",
+      "keyDifferentiator": "Revenue enablement (training focus)",
+      "g2Rating": 4.6,
+      "easeOfUse": 45,
+      "priceLevel": 78,
       "keyNotes": ""
     },
     {
@@ -35,25 +24,14 @@
       "keyNotes": ""
     },
     {
-      "name": "MediaFly",
-      "type": "Direct",
-      "targetSegment": "Enterprise",
-      "pricingModel": "Custom enterprise pricing",
-      "keyDifferentiator": "Sales content management",
-      "g2Rating": 4.3,
-      "easeOfUse": 25,
-      "priceLevel": 88,
-      "keyNotes": ""
-    },
-    {
-      "name": "WorkRamp",
+      "name": "Gong",
       "type": "Direct",
       "targetSegment": "Mid-Market/Enterprise",
-      "pricingModel": "~$25-40/user/month",
-      "keyDifferentiator": "Sales training LMS with superior UX",
+      "pricingModel": "~$1,200-1,600/user/year",
+      "keyDifferentiator": "Conversation intelligence leader",
       "g2Rating": 4.7,
-      "easeOfUse": 80,
-      "priceLevel": 55,
+      "easeOfUse": 65,
+      "priceLevel": 80,
       "keyNotes": ""
     },
     {
@@ -68,25 +46,36 @@
       "keyNotes": ""
     },
     {
-      "name": "Seismic",
-      "type": "Direct",
-      "targetSegment": "Enterprise",
-      "pricingModel": "Custom enterprise pricing",
-      "keyDifferentiator": "Content enablement & automation",
-      "g2Rating": 4.5,
-      "easeOfUse": 30,
-      "priceLevel": 90,
+      "name": "Hive Perform",
+      "type": "You",
+      "targetSegment": "SMB/Mid-Market",
+      "pricingModel": "£1k-£3k/month (tiered)",
+      "keyDifferentiator": "AI-native closed-loop execution",
+      "g2Rating": null,
+      "easeOfUse": 75,
+      "priceLevel": 35,
       "keyNotes": ""
     },
     {
-      "name": "Allego",
-      "type": "Direct",
+      "name": "Klue",
+      "type": "Indirect",
       "targetSegment": "Mid-Market/Enterprise",
-      "pricingModel": "Custom pricing",
-      "keyDifferentiator": "Revenue enablement (training focus)",
-      "g2Rating": 4.6,
-      "easeOfUse": 45,
-      "priceLevel": 78,
+      "pricingModel": "~$1,000+/user/year",
+      "keyDifferentiator": "Competitive intelligence only",
+      "g2Rating": 4.8,
+      "easeOfUse": 60,
+      "priceLevel": 75,
+      "keyNotes": ""
+    },
+    {
+      "name": "MediaFly",
+      "type": "Direct",
+      "targetSegment": "Enterprise",
+      "pricingModel": "Custom enterprise pricing",
+      "keyDifferentiator": "Sales content management",
+      "g2Rating": 4.3,
+      "easeOfUse": 25,
+      "priceLevel": 88,
       "keyNotes": ""
     },
     {
@@ -112,14 +101,25 @@
       "keyNotes": ""
     },
     {
-      "name": "Klue",
-      "type": "Indirect",
+      "name": "Seismic",
+      "type": "Direct",
+      "targetSegment": "Enterprise",
+      "pricingModel": "Custom enterprise pricing",
+      "keyDifferentiator": "Content enablement & automation",
+      "g2Rating": 4.5,
+      "easeOfUse": 30,
+      "priceLevel": 90,
+      "keyNotes": ""
+    },
+    {
+      "name": "WorkRamp",
+      "type": "Direct",
       "targetSegment": "Mid-Market/Enterprise",
-      "pricingModel": "~$1,000+/user/year",
-      "keyDifferentiator": "Competitive intelligence only",
-      "g2Rating": 4.8,
-      "easeOfUse": 60,
-      "priceLevel": 75,
+      "pricingModel": "~$25-40/user/month",
+      "keyDifferentiator": "Sales training LMS with superior UX",
+      "g2Rating": 4.7,
+      "easeOfUse": 80,
+      "priceLevel": 55,
       "keyNotes": ""
     }
   ]
